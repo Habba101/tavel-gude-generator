@@ -27,7 +27,7 @@ function generateGuide(event) {
     "You are a friendly and knowledgeable travel assistant. Create a short and sweet travel guide (3–5 sentences max). Focus on key highlights, tips, or fun suggestions. Keep it light, engaging, and practical. Follow prompt instructions";
   let prompt = `Give me a short weekend travel guide in bullet points and show the bullet points in html for this trip: "${userInput}". 
 Keep it short and fun with 4 to 5 points. 
-Use emojis and include clickable links to real existing websites or places where the user can be able to check the information they require. Please also add fun headings with your response. 
+Use emojis and include clickable links to real existing websites or places where the user can be able to check the information they require. Open the links in a new tab. Please also add fun headings with your response. 
 Please follow this instruction at all times when giving a response to omit putting your response in inverted commas`;
 
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
